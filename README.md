@@ -1,70 +1,55 @@
-# Getting Started with Create React App
+# 👋 Hi, I'm Heherson A. Amit
+### Software Engineer & Full-Stack Developer
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Experienced **Software Engineer** with a proven track record of architecting scalable enterprise systems, automating complex workflows, and delivering feature-rich applications across web, desktop, and mobile platforms. I specialize in C#, ASP.NET Core, and cloud data platforms like Palantir Foundry, driving multi-million dollar operational efficiency and system optimization.
 
-## Available Scripts
+---
 
-In the project directory, you can run:
+### Key Achievements
+* **$1.5M Operational Savings:** Pioneered an enterprise Chemical Management System using **Palantir Foundry** at Lear Corporation, automating global workflows and implementing an AI agent bot for advanced reporting.
+* **Full-Lifecycle Module Delivery:** Successfully developed high-scale ERP, Accounting, Inventory, and HRIS enterprise modules.
+* **Independent Project Leadership:** End-to-end design, deployment, and maintenance of specialized web and Android apps (Recruitment platforms, specialized inventory tracking, and data collection tools).
+* **Technical Mentorship:** Shared industry-aligned QA and test automation paradigms (Selenium) as a part-time university instructor.
 
-### `yarn start`
+---
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### Technical Skills
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+* **Languages:** C#, TypeScript, Java (Android), SQL
+* **Backend & Frameworks:** ASP.NET Core, Windows Forms
+* **Frontend:** SCSS, Bootstrap
+* **Data & Platforms:** Palantir Foundry, Azure DevOps, MS SQL Server, Git
+* **Testing & QA:** Selenium, User Acceptance Testing (UAT), Script Maintenance, Debugging
+* **Methodologies:** Agile, Scrum, Mind Mapping (Requirement Traceability)
 
-### `yarn test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Professional Experience
 
-### `yarn build`
+#### **IT Specialist** | Lear Corporation LPEB *(2023 - Present)*
+* Architected a global Chemical Management System via Palantir Foundry to automate workflows for EHS, saving $1.5M in year one.
+* Deployed core web system modules using C# ASP.NET across multiple critical development streams.
+* Supervised Azure DevOps infrastructure, managing code repositories and CI/CD project alignment.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### **Software Engineer** | NPAX Cebu Corporation *(2022 - 2023)*
+* Maintained full-lifecycle engineering support for high-impact ERP, Accounting, and Inventory modules.
+* Engineered feature-rich desktop clients (C# Windows Forms) and Android applications (Java).
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+#### **Web Developer** | Mesh Networks Inc. *(2019 - 2022)*
+* Engineered full-stack web and mobile apps, including **HUMAN HRIS**, **Online Recruitment Platforms**, and **NIMS** (National Integrated Microchip System) for Android.
+* Managed end-to-end deployments and continuous client requirement alignments.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+---
 
-### `yarn eject`
+### Education & Community
+* **Instructor (Part-Time):** University of Cebu Lapu-Lapu & Mandaue (2024) – Taught Software QA, Automation Testing (Selenium), and Test-Case Design.
+* **B.S. in Information Technology:** University of Cebu in Lapu-Lapu and Mandaue (2015 - 2019).
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+---
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Connect with Me
+* **LinkedIn:** [/in/heherson-amit-it](https://linkedin.com/in/heherson-amit-it)
+* **Email:** [cocokamit@gmail.com](mailto:cocokamit@gmail.com)
+* **Location:** Lapu-Lapu / Mandaue, Cebu, Philippines
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `yarn build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)

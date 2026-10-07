@@ -109,6 +109,28 @@ const paths = {
       <path d="m12 3 8 4.5v9L12 21l-8-4.5v-9ZM12 12l8-4.5M12 12 4 7.5M12 12v9" />
     </>
   ),
+  ledger: (
+    <>
+      <path className="fill" d="M5 3h11l3 3v15H5Z" />
+      <path d="M5 3h11l3 3v15H5ZM16 3v3h3M8.5 10h7M8.5 13.5h7M8.5 17h4" />
+    </>
+  ),
+  clipboard: (
+    <>
+      <rect className="fill" x="4.5" y="4.5" width="15" height="17" rx="2.5" />
+      <rect x="4.5" y="4.5" width="15" height="17" rx="2.5" /><rect x="8.5" y="2.5" width="7" height="4" rx="1.2" />
+      <path d="m8.5 14 2.5 2.5 4.5-5" />
+    </>
+  ),
+  atom: (
+    <>
+      <circle className="fill" cx="12" cy="12" r="3" />
+      <circle cx="12" cy="12" r="1.6" />
+      <ellipse cx="12" cy="12" rx="9.5" ry="3.8" />
+      <ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(60 12 12)" />
+      <ellipse cx="12" cy="12" rx="9.5" ry="3.8" transform="rotate(-60 12 12)" />
+    </>
+  ),
   arrow: <path d="M5 19 19 5M8 5h11v11" />,
   back: <path d="M19 12H5M11 6l-6 6 6 6" />,
   mail: (

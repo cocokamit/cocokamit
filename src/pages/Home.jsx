@@ -50,7 +50,7 @@ function Hero() {
 // Vertical scroll drives a horizontal track of featured projects (desktop).
 function FeaturedRail() {
   const ref = useRef(null);
-  const featured = projects.slice(0, 6);
+  const featured = projects.filter((p) => p.featured);
   const track = useRef(null);
   const [dist, setDist] = useState(0);
   useEffect(() => {

@@ -26,6 +26,18 @@ import triNav from '../assets/work/tricoins/admin-nav.webp';
 import amsRun from '../assets/work/ams/running-app-ams.webp';
 import amsDesign from '../assets/work/ams/ams-design.webp';
 import amsChoose from '../assets/work/ams/choosing.webp';
+import pulse1a from '../assets/work/pulse-v1/1.webp';
+import pulse1b from '../assets/work/pulse-v1/2.webp';
+import pulse1c from '../assets/work/pulse-v1/3.webp';
+import pulse1d from '../assets/work/pulse-v1/4.webp';
+import pulse2a from '../assets/work/pulse-v2/1.webp';
+import pulse2b from '../assets/work/pulse-v2/2.webp';
+import pulse2c from '../assets/work/pulse-v2/3.webp';
+import pulse2d from '../assets/work/pulse-v2/4.webp';
+import weber1 from '../assets/work/weberson/1.webp';
+import weber2 from '../assets/work/weberson/2.webp';
+import weber3 from '../assets/work/weberson/3.webp';
+import weber4 from '../assets/work/weberson/4.webp';
 
 export const profile = {
   name: 'Heherson A. Amit',
@@ -48,7 +60,7 @@ export const profile = {
 export const stats = [
   { value: 7, suffix: '+', label: 'Years shipping software' },
   { value: 1.5, prefix: '$', suffix: 'M', decimals: 1, label: 'Saved in year one at Lear' },
-  { value: 12, suffix: '+', label: 'Systems built & deployed' },
+  { value: 15, suffix: '+', label: 'Systems built & deployed' },
   { value: 10, suffix: '+', label: 'Clients & companies served' },
 ];
 
@@ -75,10 +87,11 @@ export const experience = [
     points: [
       'Pioneered an enterprise Chemical Management System on Palantir Foundry, automating Safety Data Sheet workflows for EHS — $1.5M in operational savings in the first year.',
       'Built an AI agent bot for reporting and standardized the annual chemical inventory declaration across all sites globally.',
+      'Developed in-house automotive compliance apps — the PPAP Operation Database and IMDS Solutions Central — on ASP.NET Core and SQL Server.',
       'Partnered with a C# ASP.NET team to architect and deploy modules across three workstreams.',
       'Manages Azure DevOps for the team and writes SRS / FRD documentation that keeps pace with Agile releases.',
     ],
-    tags: ['Palantir Foundry', 'AI agents', 'ASP.NET', 'Azure DevOps'],
+    tags: ['Palantir Foundry', 'AI agents', 'ASP.NET Core', 'PPAP / IMDS', 'Azure DevOps'],
   },
   {
     role: 'Instructor (Part-time)',
@@ -98,11 +111,11 @@ export const experience = [
     period: '2022 — 2023',
     icon: 'gear',
     points: [
-      'Designed and developed high-scale ERP, Accounting and Inventory modules.',
+      'Designed and developed an integrated ERP, Accounting and Inventory system used across NPAX client companies.',
       'Shipped desktop (C# Windows Forms) and Android (Java) applications for multiple clients.',
       'Planned and ran UAT so every release was proven before it reached users.',
     ],
-    tags: ['C#', 'WinForms', 'Android', 'ERP'],
+    tags: ['C#', 'WinForms', 'DevExpress', 'Android', 'ERP'],
   },
   {
     role: 'Web Developer',
@@ -180,6 +193,7 @@ export const skillGroups = [
 export const projects = [
   {
     slug: 'chemical-management-system',
+    featured: true,
     title: 'Chemical Management System',
     client: 'Lear Corporation',
     year: '2023 — now',
@@ -202,7 +216,80 @@ export const projects = [
     images: [],
   },
   {
+    slug: 'ppap-operation-database',
+    title: 'PPAP Operation Database',
+    client: 'Lear Corporation',
+    year: '2023 — now',
+    kind: 'Enterprise web app',
+    color: '#60a5fa',
+    icon: 'clipboard',
+    summary:
+      'The in-house system of record for the Production Part Approval Process — every automotive part submission, its required elements, owners, due dates and approval status in one place.',
+    impact: [
+      { value: '1', label: 'source of truth for PPAP' },
+      { value: 'Live', label: 'status per part & customer' },
+      { value: 'Audit', label: 'ready document trail' },
+    ],
+    stack: ['ASP.NET Core', 'C#', 'MS SQL Server', 'MaterialPro', 'jQuery'],
+    story: [
+      'Before a car part can ship to an automaker it has to pass PPAP: a package of evidence such as the Part Submission Warrant, control plan, PFMEA, dimensional results and material certifications. Tracking those packages across programs, plants and customers in spreadsheets made it hard to see what was missing or late.',
+      'The PPAP Operation Database gives engineering and quality teams one workspace. Each part number carries its submission level, required elements, responsible owners, due dates and customer approval status, with dashboards that surface overdue items before they block a launch.',
+      'I built it on ASP.NET Core with SQL Server, using the MaterialPro admin template and jQuery for fast, familiar screens: searchable tables, filters, document uploads and role-based access.',
+    ],
+    confidential: true,
+    images: [],
+  },
+  {
+    slug: 'imds-solutions-central',
+    title: 'IMDS Solutions Central',
+    client: 'Lear Corporation',
+    year: '2023 — now',
+    kind: 'Enterprise web app',
+    color: '#2dd4bf',
+    icon: 'atom',
+    summary:
+      'A central hub for IMDS material-data compliance: it tracks the Material Data Sheets behind every automotive part, from supplier request to customer acceptance.',
+    impact: [
+      { value: 'Central', label: 'IMDS request tracking' },
+      { value: 'Admin', label: 'console for compliance team' },
+      { value: 'Clear', label: 'status from supplier to OEM' },
+    ],
+    stack: ['ASP.NET Core', 'C#', 'MS SQL Server', 'Admin dashboard', 'jQuery'],
+    story: [
+      'Automakers require a Material Data Sheet in the International Material Data System (IMDS) for every part, declaring what it is made of down to the substance level, so restricted and declarable substances can be controlled. Each finished part depends on MDS submissions from many suppliers.',
+      'IMDS Solutions Central brings that work into one place. The compliance team logs requests, follows each part’s supplier submissions and customer acceptance or rejection, and sees at a glance which parts are still blocking a submission.',
+      'It runs on ASP.NET Core and SQL Server with an admin console for managing users, suppliers, parts and statuses, and jQuery-powered tables for searching and bulk updates.',
+    ],
+    confidential: true,
+    images: [],
+  },
+  {
+    slug: 'erp-accounting-inventory',
+    title: 'ERP + Accounting + Inventory',
+    client: 'NPAX Cebu Corporation',
+    year: '2022 — 2023',
+    kind: 'Enterprise desktop & mobile',
+    color: '#fbbf24',
+    icon: 'ledger',
+    summary:
+      'An integrated business suite for NPAX clients: purchasing, sales, accounting and multi-warehouse inventory on a C# desktop app, with Android handhelds for work on the floor.',
+    impact: [
+      { value: '3-in-1', label: 'ERP, accounting & inventory' },
+      { value: '2', label: 'platforms: desktop + Android' },
+      { value: 'UAT', label: 'proven before every release' },
+    ],
+    stack: ['C# Windows Forms', 'DevExpress', 'Java (Android)', 'MS SQL Server', 'REST API', 'jQuery'],
+    story: [
+      'Clients ran purchasing, sales, books and stock in separate tools, so the numbers never matched at month-end. The suite connects them: a purchase order becomes a receipt, then stock on hand, then a payable; a sale reduces inventory and posts to the ledger automatically.',
+      'The desktop client is C# Windows Forms with DevExpress grids, reports and dashboards for heavy data entry. Android handhelds talk to the same SQL Server through a REST API for stock counts, receiving and transfers, and lightweight jQuery web pages cover quick lookups.',
+      'I designed and built modules across all three areas, ran UAT with each client before release, and handled the support, debugging and documentation after go-live.',
+    ],
+    confidential: true,
+    images: [],
+  },
+  {
     slug: 'human-hris',
+    featured: true,
     title: 'HUMAN HRIS',
     client: 'Mesh Networks · Cebu Landmasters (myCLI)',
     year: '2019 — 2022',
@@ -226,6 +313,7 @@ export const projects = [
   },
   {
     slug: 'online-recruitment',
+    featured: true,
     title: 'HUMAN Online Recruitment',
     client: 'Mesh Networks',
     year: '2020 — 2021',
@@ -249,6 +337,7 @@ export const projects = [
   },
   {
     slug: 'orange-gamefowl',
+    featured: true,
     title: 'Orange Gamefowl',
     client: 'Mesh Networks',
     year: '2021',
@@ -272,6 +361,7 @@ export const projects = [
   },
   {
     slug: 'nims',
+    featured: true,
     title: 'NIMS',
     client: 'National Integrated Microchip System',
     year: '2021',
@@ -359,24 +449,52 @@ export const projects = [
     images: [],
   },
   {
-    slug: 'pulse',
+    slug: 'pulse-v1',
+    featured: true,
     title: 'Pulse — Marketing Command Center',
-    client: 'Concept product',
+    client: 'Marketing app · v1',
     year: '2026',
     kind: 'React web app',
-    color: '#e879f9',
+    color: '#d9f99d',
     icon: 'pulse',
     repo: 'Marketing-v1',
     summary:
-      'A marketing dashboard in two flavours: v1 is loud (custom cursor, pinned horizontal scroll, magnetic buttons), v2 is quiet and minimal.',
+      'A loud, Awwwards-style marketing management app: plan, launch and measure campaigns across social, email, search, video and events on one living board.',
     impact: [
-      { value: '2', label: 'design directions' },
-      { value: 'DnD', label: 'content calendar' },
-      { value: 'A11y', label: 'reduced-motion aware' },
+      { value: 'CRUD', label: 'campaigns saved locally' },
+      { value: 'Pinned', label: 'scroll-driven funnel' },
+      { value: 'DnD', label: 'content calendar (mouse & touch)' },
     ],
     stack: ['React', 'Vite', 'Framer Motion', 'Lenis'],
-    story: ['Campaign CRUD, a scroll-driven funnel, channel charts and a drag-and-drop calendar that works with mouse and touch.'],
-    images: [],
+    story: [
+      'Pulse treats a marketing dashboard like a product launch page. The hero has masked line reveals, a pointer-chasing gradient blob and a 3D tilt card; a ticker reacts to scroll velocity; KPIs count up and sparklines draw themselves.',
+      'Under the motion it is a working tool: create, edit, pause and delete campaigns with search and filters, follow a pinned funnel where vertical scroll drives a horizontal track, compare channels on linked bar and donut charts, and drag posts between days on the content calendar.',
+      'Global touches include a preloader curtain, a blend-mode cursor with contextual labels, magnetic buttons, nav text scramble, film grain and a circular-reveal mobile menu — all switched off for prefers-reduced-motion.',
+    ],
+    images: [pulse1a, pulse1b, pulse1c, pulse1d],
+  },
+  {
+    slug: 'pulse-v2',
+    title: 'Pulse v2 — Marketing, quietly',
+    client: 'Marketing app · v2',
+    year: '2026',
+    kind: 'React web app',
+    color: '#e5e7eb',
+    icon: 'pulse',
+    repo: 'Marketing-v2',
+    summary:
+      'The same marketing app, redesigned minimal: every feature from v1 with far less visual noise, light and dark themes, and calm tables that stack on phones.',
+    impact: [
+      { value: 'Same', label: 'features as v1' },
+      { value: '2', label: 'themes, follows the system' },
+      { value: 'Calm', label: 'one typeface, hairline UI' },
+    ],
+    stack: ['React', 'Vite', 'Framer Motion'],
+    story: [
+      'v2 is an exercise in restraint. I removed the preloader, custom cursor, grain, marquee, tilt and pinned scroll, and kept one typeface, hairline borders, a muted channel palette and short fade-and-rise reveals.',
+      'Nothing was lost functionally: campaigns, the funnel, channel isolation, the drag-and-drop calendar and team cards all remain, and the campaign table becomes stacked rows and the modal a bottom sheet on phones.',
+    ],
+    images: [pulse2a, pulse2b, pulse2c, pulse2d],
   },
   {
     slug: 'weberson',
@@ -395,8 +513,11 @@ export const projects = [
       { value: 'Any', label: 'device, any screen' },
     ],
     stack: ['React', 'Vite', 'Playwright', 'ffmpeg'],
-    story: ['Even the social posts and the promo reel are generated from HTML with Playwright and ffmpeg, so the brand stays in code.'],
-    images: [],
+    story: [
+      'Weberson is how I offer websites to small businesses, restaurants and creators. The palette is cream, deep green, terracotta and sage, with a custom “ink drop” pointer that stretches as it moves and becomes a label over buttons.',
+      'Even the social posts and the promo reel are generated from HTML with Playwright and ffmpeg, so the brand stays in code.',
+    ],
+    images: [weber1, weber2, weber3, weber4],
   },
 ];
 

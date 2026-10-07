@@ -19,7 +19,7 @@ Deploy `dist/` to Vercel, Netlify or Cloudflare Pages. SPA rewrites are already 
 | Route | What's on it |
 | --- | --- |
 | `/` | 3D hero (a laptop that types code; click it to open/close the lid), client marquee that speeds up with scroll, count-up stats, a pinned horizontal-scroll project rail, scroll-lit statement, services |
-| `/work` | All 10 projects with animated filter pills (Web / Mobile / Desktop / Enterprise), tilt + spotlight cards |
+| `/work` | All 14 projects with animated filter pills (Web / Mobile / Desktop / Enterprise), tilt + spotlight cards |
 | `/work/:slug` | Case study: screenshot gallery in browser or phone frames, lightbox, impact numbers, story, source link, next project |
 | `/about` | Portrait, story, experience timeline that draws itself as you scroll, values |
 | `/skills` | Brand-coloured icon cloud plus skill cards with animated proficiency rings |

@@ -21,7 +21,19 @@ export default function ProjectCover({ project, index = 0, className = '' }) {
     <div className={`cover cover-gen ${className}`} style={{ '--c': project.color }}>
       <div className="cover-grid" aria-hidden="true" />
       <div className="cover-glow" aria-hidden="true" />
-      <div className="cover-icon"><Icon name={project.icon} size={88} /></div>
+      {project.confidential && (
+        <div className="cover-mock" aria-hidden="true">
+          <div className="mock-bar"><i /><i /><i /><span>{project.title}</span></div>
+          <div className="mock-body">
+            <div className="mock-side">{Array.from({ length: 6 }, (_, k) => <b key={k} />)}</div>
+            <div className="mock-main">
+              <div className="mock-kpis">{project.impact.map((m) => <span key={m.label}><strong>{m.value}</strong><em>{m.label}</em></span>)}</div>
+              {Array.from({ length: 5 }, (_, k) => <div className="mock-row" key={k}><b /><b /><b /><i className={`st st-${k % 3}`} /></div>)}
+            </div>
+          </div>
+        </div>
+      )}
+      <div className="cover-icon"><Icon name={project.icon} size={project.confidential ? 56 : 88} /></div>
       {project.confidential && <span className="cover-badge"><Icon name="lock" size={14} /> Confidential — internal system</span>}
     </div>
   );

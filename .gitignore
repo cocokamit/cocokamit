@@ -3,3 +3,4 @@ dist
 .DS_Store
 .env*.local
 npm-debug.log*
+*-dist.zip
